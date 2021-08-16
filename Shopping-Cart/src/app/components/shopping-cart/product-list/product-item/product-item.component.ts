@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
+import * as events from 'events';
 import { Product } from 'src/app/models/product';
 import { MessengerService } from 'src/app/services/messenger.service'
 

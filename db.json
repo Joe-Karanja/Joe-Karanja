@@ -1,0 +1,69 @@
+{
+  "products": [
+      {
+        "ïd": 1,
+        "name": "Rubik's Cube",
+        "description": "Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB1Vga.KpXXXXcAXXXXq6xXFXXX4/205795169/HTB1Vga.KpXXXXcAXXXXq6xXFXXX4.jpg ",
+        "price": 299
+      },
+      {
+        "ïd": 2,
+        "name": "Train-kids",
+        "description": "Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0036/4806/1509/products/a04090391cce4012206f8f966bf11264d9f9c7f6_square2983167_1.jpg?v=1617941135",
+        "price": 199
+      },
+
+      {
+        "ïd": 3,
+        "name": "Classic Shoes",
+        "description": "Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+        "imageUrl": "https://image.made-in-china.com/202f0j00WgnUZkqASzcw/Square-Cube-Children-s-Puzzle-Magic-Cubes-DIY-Educational-Toys-for-Kids.jpg",
+        "price": 399
+      },
+      {
+        "ïd": 4,
+        "name": "Smartphone",
+        "description": "Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0036/4806/1509/products/a04090391cce4012206f8f966bf11264d9f9c7f6_square2983167_1.jpg?v=1617941135",
+        "price": 499
+      },
+
+      {
+        "ïd": 5,
+        "name": "Superman",
+        "description": "Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+        "imageUrl": "https://image.made-in-china.com/202f0j00WgnUZkqASzcw/Square-Cube-Children-s-Puzzle-Magic-Cubes-DIY-Educational-Toys-for-Kids.jpg",
+        "price": 599
+      },
+
+      {
+        "ïd": 6,
+        "name": "Note Pad",
+        "description": "Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+        "imageUrl": "https://images.ctfassets.net/2d5q1td6cyxq/m5LPxQrMGhjPujRSmFAW5/558e552d6c2fd0e522c6119bfe50f87d/SHOP_USEN_Accessories_Replacement_Customer_Display_for_Register_Tile.png?h=640&w=640",
+        "price": 599
+      }
+    ],
+
+    "cart": [],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

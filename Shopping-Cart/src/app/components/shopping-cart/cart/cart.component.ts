@@ -16,25 +16,49 @@ export class CartComponent implements OnInit {
     //{ id: 4,productId: 4,productName:"Test 4",qty: 2, price: 100 },
   ];
 
-  cartTotal=0
+  cartTotal = 0
 
-  constructor(private msg: MessengerService) { }
+  constructor(private msg: MessengerService) { 
+    
+  }
 
   ngOnInit(): void{
     this.msg.getMsg().subscribe((product: Product) => {
-
-      this.cartTotal.push({
-        productName: product.name,
-        qty: 1,
-        price: product.price
-      })
-      
-      this.cartTotal = 0
-      this.cartItems.forEach(item=>{
-        this.cartTotal += (item.qty * item.price)
-      })
+      this.addProductToCart(product)
      
     })
+
+  }
+  addProductToCart(product: Product){
+
+    let productExists = false
+
+     for(let i in this.cartItems) {
+        if(this.cartItems[i].productId === product.id) {
+          this.cartItems[i].qty++
+          productExists = true
+          break;
+        }
+  
+        }
+
+    if(!productExists){
+      this.cartItems.push({
+            productId: product.id,
+            productName: product.name,
+            qty: 1,
+            price: product.price
+          })
+      
+    }
+ 
+
+
+    this.cartTotal = 0
+    this.cartItems.forEach(item=>{
+      this.cartTotal += (item.qty * item.price)
+    })
+
 
   }
 
