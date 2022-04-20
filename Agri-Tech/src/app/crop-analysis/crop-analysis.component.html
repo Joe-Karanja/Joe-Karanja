@@ -1,0 +1,82 @@
+<div class="card-solid">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12 col-sm-6">
+
+        <form method="post" enctype="multipart/form-data">
+          <input type="file" id="img" (change)="onSelect($event)">
+          <button type="submit" style="float:bottom;margin-bottom: 10px;" class="btn btn-info">Analyze
+            Image</button>
+        </form>
+        <div class="col-4">
+          <img [src]="url" alt="Crop Image" height="200px" width="200px" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+   <!--Crop Analysis Table-->
+   <div class="card">
+    <div class="card-body">
+      <h2>Crop Analysis Table</h2>
+
+      <table mat-table [dataSource]="crops" class="mat-elevation-z8">
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="cropType">
+          <th mat-header-cell *matHeaderCellDef> Type of Crop</th>
+          <td mat-cell *matCellDef="let element"> {{element.cropType}} </td>
+        </ng-container>
+
+        <!-- Crop Prediction Accuracy -->
+        <ng-container matColumnDef="cropAccuracy">
+          <th mat-header-cell *matHeaderCellDef> Accuracy</th>
+          <td mat-cell *matCellDef="let element"> {{element.cropAccuracy}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="cropDisease">
+          <th mat-header-cell *matHeaderCellDef> Disease Type</th>
+          <td mat-cell *matCellDef="let element"> {{element.cropDisease}} </td>
+        </ng-container>
+
+        <!-- Disease Prediction Accuracy -->
+        <ng-container matColumnDef="diseaseAccuracy">
+          <th mat-header-cell *matHeaderCellDef> Accuracy</th>
+          <td mat-cell *matCellDef="let element"> {{element.diseaseAccuracy}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="recommendation" style="margin-right: -1rem;">
+          <th mat-header-cell *matHeaderCellDef> Treatment Recommendation </th>
+          <td mat-cell *matCellDef="let element">
+            <span>
+               
+              <button type="button" class="btn btn-info" 
+              (click)="openPopup()"><mat-icon>visibility</mat-icon>
+                view
+              </button>
+          
+            </span>
+            
+          </td>
+        </ng-container> 
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <!--Angular Material Table-->
+
+
+
+    </div>
+    <!--Crop Analysis Table-->
+
+  </div>
+</div>

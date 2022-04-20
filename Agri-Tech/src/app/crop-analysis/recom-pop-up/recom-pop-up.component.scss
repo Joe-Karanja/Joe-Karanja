@@ -1,0 +1,63 @@
+.card{
+    border: none;
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%,50%);
+  
+    
+
+}
+.card h1{
+    color: black;
+    
+}
+
+.close-button{
+    border-color: white;
+    
+  }
+  
+  .close-icon {
+    transition: 1s ease-in-out;
+    float: right;
+    margin-top:-40px;
+    margin-right:-40px;
+  }
+  .close-icon:hover {
+    transform: rotate(180deg);
+  }
+  
+  ::ng-deep .icon-outside .close-button{
+    float: right;
+    top:-52px;
+    right:-52px;
+  }
+  
+  ::ng-deep .icon-outside .mat-dialog-container {
+   overflow: unset
+  }
+  
+  /*Table */
+
+table {
+  width: 100%;
+
+}
+th{
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    background: white;
+}
+td{
+    font-size: 1rem;
+    text-align: center !important;
+}
+
+/*Table */
+ 

@@ -1,0 +1,75 @@
+
+.session{
+    background-image: url(images/farm.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+ }
+
+ .session-wrapper{
+     font-size: larger;
+     font-weight: bolder;
+     margin-left: 2rem;
+     margin-top: 5rem;
+ }
+
+ .column1 {
+     margin-right: 7rem;
+     margin-top: 50px;
+    
+  }
+
+  .column2 {
+    margin-top: 10rem;
+    width: 50%;
+  
+ }
+
+ article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+    font-size: larger;
+    color: white;
+  }
+
+ article{ animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+//   p {
+//     animation-duration: 3s;
+//     animation-name: slidein;
+//   }
+  
+//   @keyframes slidein {
+//     from {
+//       margin-left: 100%;
+//       width: 300%;
+//     }
+  
+//     to {
+//       margin-left: 0%;
+//       width: 100%;
+//     }
+//   }

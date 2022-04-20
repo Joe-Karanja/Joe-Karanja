@@ -1,0 +1,183 @@
+<app-ng-shared-filter></app-ng-shared-filter>
+
+<div fxLayout="row wrap">
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget">
+      <div mat-card-widget>
+        <button mat-mini-fab color="primary" mat-card-icon class="shadow-none">
+          <mat-icon> money</mat-icon>
+        </button>
+        <div class="pl-1 pr-1">
+          <h2 mat-card-widget-title>103</h2>
+          <p class="mat-text-muted text-md">Transactions</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget">
+      <div mat-card-widget>
+        <button mat-mini-fab disabled="" mat-card-icon class="shadow-none">
+          <mat-icon>phone</mat-icon>
+        </button>
+        <div class="pl-1 pr-1">
+          <h2 mat-card-widget-title>230</h2>
+          <p class="mat-text-muted text-md">Devices</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget">
+      <div mat-card-widget>
+        <button mat-mini-fab color="warn" mat-card-icon class="shadow-none">
+          <mat-icon>supervised_user_circle</mat-icon>
+        </button>
+        <div class="pl-1 pr-1">
+          <h2 mat-card-widget-title>323</h2>
+          <p class="mat-text-muted text-md"> Active Agents</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget">
+      <div mat-card-widget>
+        <button mat-mini-fab mat-card-icon class="shadow-none">
+          <h2 mat-card-widget-title>323</h2>
+        </button>
+        <div class="pl-1 pr-1">
+          <h2 mat-card-widget-title>870</h2>
+          <p class="mat-text-muted text-md">Total Agents</p>
+        </div>
+      </div>
+    </mat-card>
+  </div> 
+</div>
+
+<div fxLayout="row wrap">
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget mat-teal">
+      <div mat-card-widget>
+        <div mat-card-float-icon>
+          <mat-icon> attach_money</mat-icon>
+        </div>
+        <div class="pl-0">
+          <h2 mat-card-widget-title>KES.1,030,000</h2>
+          <p>Transactions Value</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget mat-purple">
+      <div mat-card-widget>
+        <div mat-card-float-icon>
+          <mat-icon>assessment</mat-icon>
+        </div>
+        <div class="pl-0">
+          <h2 mat-card-widget-title>210</h2>
+          <p>Transactions Per hour</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget text-light mat-green">
+      <div mat-card-widget>
+        <div mat-card-float-icon>
+          <mat-icon> rate_review</mat-icon>
+        </div>
+        <div class="pl-0">
+          <h2 mat-card-widget-title>98%</h2>
+          <p>Success rate </p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100">
+    <mat-card class="card-widget mat-indigo">
+      <div mat-card-widget>
+        <div mat-card-float-icon>
+          <mat-icon>email</mat-icon>
+        </div>
+        <div class="pl-0">
+          <h2 mat-card-widget-title>870</h2>
+          <p>Total Users</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+<div fxLayout="row wrap">
+  <div fxFlex.gt-sm="100%" fxFlex="100">
+    <mat-card>
+      <mat-card-subtitle fxLayout="row" fxLayoutAlign="start center">
+        Revenue &nbsp; <span class="font-weight-bold mat-text-primary">+458,90</span>
+        <span fxFlex></span>
+        <button mat-icon-button mat-button-sm [matMenuTriggerFor]="card1" aria-label="Open card menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-card-subtitle>
+      <mat-menu #card1="matMenu" x-position="before">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          Settings
+        </button>
+        <button mat-menu-item>
+          <mat-icon>more</mat-icon>
+          View More
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          Disable notifications
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          Remove Panel
+        </button>
+      </mat-menu>
+      <mat-card-content>
+        <canvas height="150" baseChart class="chart" [datasets]="barChartData" [labels]="barChartLabels"
+          [options]="barChartOptions" [colors]="chartColors" [legend]="barChartLegend"
+          [chartType]="barChartType"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex.gt-sm="100%" fxFlex.gt-xs="100" fxFlex="100">
+    <mat-card>
+      <mat-card-subtitle fxLayout="row" fxLayoutAlign="start center">
+        Yearly Sales &nbsp; <span class="font-weight-bold mat-text-warn">-46,68</span>
+        <span fxFlex></span>
+        <button mat-icon-button mat-button-sm [matMenuTriggerFor]="card2" aria-label="Open card menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-card-subtitle>
+      <mat-menu #card2="matMenu" x-position="before">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          Settings
+        </button>
+        <button mat-menu-item>
+          <mat-icon>more</mat-icon>
+          View More
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          Disable notifications
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          Remove Panel
+        </button>
+      </mat-menu>
+      <mat-card-content>
+        <canvas height="150" baseChart class="chart" [datasets]="ComboChartData" [labels]="comboChartLabels"
+          [options]="ComboChartOptions" [colors]="chartColors" [legend]="comboChartLegend"
+          [chartType]="barChartType"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+</div>

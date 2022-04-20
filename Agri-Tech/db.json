@@ -1,0 +1,203 @@
+{
+  "CropsAnalysis":[
+    {
+      "id":1,
+      "cropType":"Coffee",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":2,
+      "cropType":"Maize",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":3,
+      "cropType":"Tea",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":4,
+      "cropType":"Banana",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":5,
+      "cropType":"Beans",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":6,
+      "cropType":"Coffee",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":7,
+      "cropType":"Maize",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":8,
+      "cropType":"Tea",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":9,
+      "cropType":"Banana",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    },
+    {
+      "id":10,
+      "cropType":"Beans",
+      "cropAccuracy": "80%",
+      "cropDisease":"parasitic plants",
+      "diseaseAccuracy": "80%",
+      "recommendation":"Spray with Nitric Acid"
+    }
+  ],
+
+  "AnalysisReport":[
+    {
+      "analysis_REF_No":1,
+      "crop":"Banana",
+      "status":"parasitic plants",
+      "disease_Name":"Bacteria",
+      "probability":"50%",
+      "date_Created":"06/03/2022"
+    },
+    {
+      "analysis_REF_No":2,
+      "crop":"Tea",
+      "status":"Bad",
+      "disease_Name":"Fungi",
+      "probability":"80%",
+      "date_Created":"24/03/2022"
+    },
+    {
+      "analysis_REF_No":3,
+      "crop":"Maize",
+      "status":"Healthy",
+      "disease_Name":"nematodes",
+      "probability":"50%",
+      "date_Created":"17/03/2022"
+    },
+    {
+      "analysis_REF_No":4,
+      "crop":"Beans",
+      "status":" Moderate",
+      "disease_Name":"Fungi infection",
+      "probability":"50%",
+      "date_Created":"18/03/2022"
+    },
+    {
+      "analysis_REF_No":5,
+      "crop":"Pineapple",
+      "status":"Good",
+      "disease_Name":"viruses",
+      "probability":"70%",
+      "date_Created":"11/03/2022"
+    },
+    {
+      "analysis_REF_No":6,
+      "crop":"Banana",
+      "status":"parasitic plants",
+      "disease_Name":"Bacteria",
+      "probability":"50%",
+      "date_Created":"06/03/2022"
+    },
+    {
+      "analysis_REF_No":7,
+      "crop":"Tea",
+      "status":"Bad",
+      "disease_Name":"Fungi",
+      "probability":"80%",
+      "date_Created":"24/03/2022"
+    },
+    {
+      "analysis_REF_No":8,
+      "crop":"Maize",
+      "status":"Healthy",
+      "disease_Name":"nematodes",
+      "probability":"50%",
+      "date_Created":"17/03/2022"
+    },
+    {
+      "analysis_REF_No":9,
+      "crop":"Beans",
+      "status":" Moderate",
+      "disease_Name":"Fungi infection",
+      "probability":"50%",
+      "date_Created":"18/03/2022"
+    },
+    {
+      "analysis_REF_No":10,
+      "crop":"Pineapple",
+      "status":"Good",
+      "disease_Name":"viruses",
+      "probability":"70%",
+      "date_Created":"11/03/2022"
+    },
+    {
+      "analysis_REF_No":11,
+      "crop":"Banana",
+      "status":"parasitic plants",
+      "disease_Name":"Bacteria",
+      "probability":"50%",
+      "date_Created":"06/03/2022"
+    },
+    {
+      "analysis_REF_No":12,
+      "crop":"Tea",
+      "status":"Bad",
+      "disease_Name":"Fungi",
+      "probability":"80%",
+      "date_Created":"24/03/2022"
+    },
+    {
+      "analysis_REF_No":13,
+      "crop":"Maize",
+      "status":"Healthy",
+      "disease_Name":"nematodes",
+      "probability":"50%",
+      "date_Created":"17/03/2022"
+    },
+    {
+      "analysis_REF_No":14,
+      "crop":"Beans",
+      "status":" Moderate",
+      "disease_Name":"Fungi infection",
+      "probability":"50%",
+      "date_Created":"18/03/2022"
+    }
+    
+  ]
+
+
+
+}

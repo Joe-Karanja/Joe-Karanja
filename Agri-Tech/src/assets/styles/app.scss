@@ -1,0 +1,63 @@
+@import "scss/material.variables";
+@import "scss/material.themes";
+@import "scss/mixins/bi-app/bi-app-ltr";
+// Core Variables and Mixins
+@import "scss/app.variables";
+@import "scss/mixins";
+// Core Styles
+@import "scss/core";
+@import "scss/material";
+@import "scss/utilities/utilities";
+@import '~@angular/cdk/overlay-prebuilt.css'; /** Add this only for non-material project */
+@import '~ngx-sharebuttons/themes/default';
+
+  mat-form-field{
+    width: 100% !important;
+  }
+  .card{
+    border: none !important;
+    padding: 10px !important;
+  }
+  .title{
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .form-control{
+    border-radius: 2px !important;
+  }
+  .mat-header-cell {
+    background: #0074eb;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+.actions-btn{
+  color: #ffffff;
+  background: #127f90 !important;
+  // height: 34px !important;
+  width: 100px !important;
+  margin-left: 8px !important;
+}
+.mat-column-index {
+    flex: 0 0 5%;
+}
+.mat-column-actions {
+    flex: 0 0 12%;
+}
+.container{
+    display: flex;
+}
+.submit-btn{
+  background: #0074eb !important;
+  border-radius: 2px !important;
+  width: 200px !important;
+  color: #ffffff !important;
+}
+h6{
+  font-size: 16px !important;
+}
+mat-icon{
+  color: #083273 !important;
+}
+  

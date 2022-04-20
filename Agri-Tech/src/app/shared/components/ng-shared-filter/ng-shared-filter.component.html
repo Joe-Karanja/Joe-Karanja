@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <label for="dater" class="form-control-label">Select Date Range</label>
+            <ejs-daterangepicker [value]="defaultRange" color='primary' (change)="selectedDate($event)" [maxDate]="maxDate"
+                [minDate]="minDate" id='daterangepicker' placeholder='Select a range'>
+                <e-presets>
+                    <e-preset class="badge badge-info" label="This Week" [start]='weekStart' [end]='weekEnd'></e-preset>
+                    <e-preset label="This Month" [start]='monthStart' [end]='monthEnd'></e-preset>
+                    <e-preset label="Last Month" [start]='lastStart' [end]='lastEnd'></e-preset>
+                    <e-preset label="Last Year" [start]='yearStart' [end]='yearEnd'></e-preset>
+                    <e-weekend></e-weekend>
+                </e-presets>
+    
+            </ejs-daterangepicker>
+    
+        </div>
+        <div class="col-4">
+            <br>
+            <mat-form-field>
+                <mat-label>Select Time Frequency</mat-label>
+                <mat-select>
+                    <mat-option value="daily">Daily</mat-option>
+                    <mat-option value="weekly">Weekly</mat-option>
+                    <mat-option value="monthly">Monthly</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- <mat-form-field appearance="fill">
+                <mat-label>Select Period</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let period of periods" [value]="period.value">
+                    {{period.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field> -->
+        </div>
+    </div>
+</div>

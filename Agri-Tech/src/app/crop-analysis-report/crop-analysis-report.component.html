@@ -1,0 +1,85 @@
+<div class="card">
+    <div class="card-body">
+      <h2>Crop Analysis Report Table</h2>
+
+                       <!--Angular Material Table--> 
+
+  <nav class="navbar">
+    <div fxLayout fxLayoutAlign="center center">  
+      <mat-form-field fxFlex="100%">
+        <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+    </div> 
+
+        <button  printTitle="Crop Analysis Report" printSectionId="report" ngxPrint>Copy</button>
+        <button  printTitle="Crop Analysis Report" printSectionId="report" ngxPrint>CSV</button>
+        <button  printTitle="Crop Analysis Report" printSectionId="report" ngxPrint>PDF</button>
+  </nav>
+
+    <table mat-table [dataSource]="reports" matSort class="mat-elevation-z8">
+    
+      <!-- Analysis Ref NO. Column -->
+      <ng-container matColumnDef="analysis_REF_No">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Analysis REF No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.analysis_REF_No}} </td>
+      </ng-container>
+    
+      <!-- Crop Type Column -->
+      <ng-container matColumnDef="crop">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Crop </th>
+        <td mat-cell *matCellDef="let element"> {{element.crop}} </td>
+      </ng-container>
+    
+      <!-- Status Column -->
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+        <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+      </ng-container>
+    
+      <!-- Disease Name Column -->
+      <ng-container matColumnDef="disease_Name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Disease Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.disease_Name}} </td>
+      </ng-container>
+    
+      <!-- Probability Column -->
+      <ng-container matColumnDef="probability">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Probability </th>
+        <td mat-cell *matCellDef="let element"> {{element.probability}} </td>
+      </ng-container>
+    
+      <!-- Date Created Column -->
+      <ng-container matColumnDef="date_Created">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Created </th>
+        <td mat-cell *matCellDef="let element"> {{element.date_Created}} </td>
+      </ng-container>
+      <ng-container matColumnDef="loading">
+        <mat-footer-cell *matFooterCellDef colspan="6">
+            Loading data...
+        </mat-footer-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="noData">
+        <mat-footer-cell *matFooterCellDef colspan="6">
+           No Data...
+        </mat-footer-cell>
+
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+     
+      <!-- <mat-footer-row *matFooterRowDef="['loading']" [ngClass]="{'hide':reports!=null}"></mat-footer-row>
+      <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(reports!=null && reports.dataSource.length==0)}"></mat-footer-row> -->
+    </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 20, 25, 100]" [pageSize]="5">
+        
+      </mat-paginator>
+    
+   <!--Angular Material Table-->
+
+
+
+    </div>
+  </div>
